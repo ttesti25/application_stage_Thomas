@@ -23,14 +23,17 @@ p.margBot30 {
 a.margLeft30 {
   margin-left: 30px;
 }
+mat-divider.margBot30 {
+  margin-bottom: 30px;
+}
 </style>
 <div class="container">
   <div class="row">
 
     <div class="col-xs-12" style="background-color:#NQIKSB">
       <mat-card class="titre" style="background-color:#6495ED"><h1 style="text-align:center;"><strong>ICHECK V1</strong></h1></mat-card>
-      <h2 class="sous-titre" style="text-align:center; color:#6495ED">Application creation tool</h2>
-
+      <h2 class="sous-titre" style="text-align:center; color:#6495ED"><strong>Application creation tool</strong></h2>
+      <mat-divider class="margBot30"></mat-divider>
       <div class="row justify-content-around margBot65">
         <div class="col">
           <label for="label" class="col-form-label">Application label:</label>
@@ -61,6 +64,7 @@ a.margLeft30 {
           <mat-checkbox color="primary" [(ngModel)]="production">Production</mat-checkbox>
         </div>
       </div>
+      <mat-divider class="margBot30"></mat-divider>
 
       <div class="row justify-content-around">
         <div class="col-7">
@@ -71,6 +75,7 @@ a.margLeft30 {
         <div class="col-5">
           <button mat-raised-button color="primary"
                   style="width:150px; height:60px"
+                  matTooltip="Create a new application in ICheck V1"
                   [disabled]="appName ==='' || appID === '' || appLabel === '' || (!(preProduction) && !(production))">
                   Create
           </button>
