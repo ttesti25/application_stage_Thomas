@@ -10,6 +10,4 @@ export class AppComponent {
   appLabel='';
   appID='';
   appUids='';
-  preProduction;
-  production;
 }

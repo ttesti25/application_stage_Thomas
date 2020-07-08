@@ -53,17 +53,6 @@ mat-divider.margBot30 {
         </div>
         <div class="col">        </div>
       </div>
-      <div class="row justify-content-start margBot65">
-        <div class="col-4">
-          <p style="text-align:center"><strong>Deployment on</strong></p>
-        </div>
-        <div class="col-3">
-          <mat-checkbox color="primary" [(ngModel)]="preProduction">Preproduction</mat-checkbox>
-        </div>
-        <div class="col-3">
-          <mat-checkbox color="primary" [(ngModel)]="production">Production</mat-checkbox>
-        </div>
-      </div>
       <mat-divider class="margBot30"></mat-divider>
 
       <div class="row justify-content-around">
@@ -76,7 +65,7 @@ mat-divider.margBot30 {
           <button mat-raised-button color="primary"
                   style="width:150px; height:60px"
                   matTooltip="Create a new application in ICheck V1"
-                  [disabled]="appName ==='' || appID === '' || appLabel === '' || (!(preProduction) && !(production))">
+                  [disabled]="appName ==='' || appID === '' || appLabel === '' ">
                   Create
           </button>
         </div>
